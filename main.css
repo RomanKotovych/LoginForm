@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #b7a8a8;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("src/mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  border: 2px solid #b7a8a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 50%;
+  width: 25%;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.login-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+}
+
+.input {
+  border: 1px solid #b7a8a8;
+  border-radius: 15px;
+  width: 85%;
+  height: 40px;
+  background: none;
+  outline: none;
+  padding: 5%;
+}
+label:has(+ .input:focus, + .input:not(:placeholder-shown)) {
+  background-color: #b7a8a8;
+  top: 18px;
+  border-radius: 10px;
+  color: black;
+  padding: 4px;
+  font-size: 0.8rem;
+}
+.label {
+  position: relative;
+  top: 35px;
+  right: 28.3333333333%;
+  transition: 0.3s;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16%;
+  width: 55%;
+  border-radius: 0 0 25px 25px;
+  background-color: #b7a8a8;
+}
+.title p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.side-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  position: relative;
+  bottom: 10px;
+  font-size: 0.85rem;
+}
+.side-options .remember input {
+  opacity: 0.5;
+  accent-color: #b7a8a8;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-btn button {
+  background-color: #fff7f8;
+  width: 85%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid black;
+  color: black;
+  margin-bottom: 10px;
+}
+
+@media (width <= 600px) {
+  html {
+    font-size: 0.9rem;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .login-btn button {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
